@@ -150,7 +150,8 @@ export function FaqContactSection() {
           </ScrollReveal>
 
           {/* Contact Form Column */}
-          <ScrollReveal direction="right" className="flex-1" id="quote">
+          <ScrollReveal direction="right" className="flex-1">
+            <div id="quote">
             <span className="text-sm font-semibold text-[#c49835] uppercase tracking-[0.2em]">
               Get In Touch
             </span>
@@ -158,6 +159,7 @@ export function FaqContactSection() {
               Get a Free Quote
             </h2>
             <ContactForm />
+            </div>
           </ScrollReveal>
         </div>
       </div>

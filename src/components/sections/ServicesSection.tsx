@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CarIcon, FootprintsIcon, HomeIcon, StairsIcon, ShieldIcon, CheckIcon, MedalIcon, PoundSterlingIcon } from "lucide-react";
+import { CarIcon, FootprintsIcon, HomeIcon, LayersIcon, ShieldIcon, CheckIcon, MedalIcon, PoundSterlingIcon } from "lucide-react";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/animations";
 import { siteContent } from "@/lib/content";
 
@@ -9,7 +9,7 @@ const serviceIcons: Record<string, React.ReactNode> = {
   driveway: <CarIcon className="w-7 h-7" />,
   pathway: <FootprintsIcon className="w-7 h-7" />,
   patio: <HomeIcon className="w-7 h-7" />,
-  steps: <StairsIcon className="w-7 h-7" />,
+  steps: <LayersIcon className="w-7 h-7" />,
 };
 
 const badgeIcons: Record<string, React.ReactNode> = {
