@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { ColorsSection } from "@/components/sections/ColorsSection";
 import { UvStableSection } from "@/components/sections/UvStableSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { ReviewsSection } from "@/components/sections/ReviewsSection";
@@ -79,6 +80,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <ServicesSection />
+        <ColorsSection />
         <UvStableSection />
         <ProcessSection />
         <ReviewsSection />
