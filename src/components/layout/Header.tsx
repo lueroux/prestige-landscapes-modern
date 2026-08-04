@@ -1,11 +1,10 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { MenuIcon, XIcon, PhoneIcon } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -17,18 +16,7 @@ const navLinks = [
 ];
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  const handleScroll = useCallback(() => {
-    setScrolled(window.scrollY >= 20);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -42,12 +30,7 @@ export function Header() {
   return (
     <>
       <header
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-          scrolled
-            ? "glass shadow-[0_1px_3px_rgba(0,0,0,0.06)]"
-            : "bg-transparent"
-        )}
+        className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-[0_1px_3px_rgba(0,0,0,0.06)]"
       >
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 h-[72px]">
           {/* Logo */}

@@ -24,13 +24,8 @@ export function HeroSection() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-white/70" />
       </div>
-
-      {/* Decorative blur circles */}
-      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-[#c49835]/10 rounded-full blur-[100px]" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-[#c49835]/5 rounded-full blur-[120px]" />
 
       <div className="relative w-full mx-auto max-w-[1200px] px-6 pt-32 pb-20">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -43,7 +38,7 @@ export function HeroSection() {
           >
             {/* Trust badge */}
             <motion.div
-              className="inline-flex items-center gap-2 glass-dark rounded-full px-4 py-1.5 mb-6 text-white/90 text-sm"
+              className="inline-flex items-center gap-2 bg-[#c49835]/10 rounded-full px-4 py-1.5 mb-6 text-[#1a1a1a] text-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
@@ -59,7 +54,7 @@ export function HeroSection() {
               <span>5-star rated local specialists</span>
             </motion.div>
 
-            <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-bold text-white leading-[1.08] tracking-tight mb-6">
+            <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-bold text-[#1a1a1a] leading-[1.08] tracking-tight mb-6">
               {hero.heading.split("&").map((part, i) => (
                 <span key={i}>
                   {i > 0 && (
@@ -70,14 +65,14 @@ export function HeroSection() {
               ))}
             </h1>
 
-            <p className="text-lg sm:text-xl text-white/80 leading-relaxed mb-3 max-w-xl">
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-3 max-w-xl">
               {hero.subheading}
             </p>
 
             {hero.paragraphs.map((p, i) => (
               <motion.p
                 key={i}
-                className="text-base text-white/60 leading-relaxed mb-3 max-w-xl"
+                className="text-base text-gray-500 leading-relaxed mb-3 max-w-xl"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 + i * 0.15, duration: 0.5 }}
@@ -100,7 +95,7 @@ export function HeroSection() {
                 <ArrowRightIcon className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
 
-              <div className="flex items-center gap-2 text-white/70 text-sm">
+              <div className="flex items-center gap-2 text-gray-500 text-sm">
                 <ShieldCheckIcon className="w-5 h-5 text-[#c49835]" />
                 <span>Fully insured &amp; guaranteed</span>
               </div>
@@ -136,11 +131,11 @@ export function HeroSection() {
           transition={{ delay: 1.2, duration: 0.6 }}
         >
           <motion.div
-            className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-1.5"
+            className="w-6 h-10 rounded-full border-2 border-gray-300 flex items-start justify-center p-1.5"
             animate={{ y: [0, 6, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
-            <motion.div className="w-1.5 h-1.5 rounded-full bg-white/60" />
+            <motion.div className="w-1.5 h-1.5 rounded-full bg-gray-400" />
           </motion.div>
         </motion.div>
       </div>
