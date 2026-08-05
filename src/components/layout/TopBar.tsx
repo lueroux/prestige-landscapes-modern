@@ -1,4 +1,4 @@
-import { PhoneIcon, MailIcon, ClockIcon } from "lucide-react";
+import { MailIcon, ClockIcon } from "lucide-react";
 import { siteContent } from "@/lib/content";
 
 export function TopBar() {
@@ -12,13 +12,6 @@ export function TopBar() {
           <span>Mon-Fri: 8am–6pm &nbsp;|&nbsp; Sat: 9am–2pm</span>
         </div>
         <div className="flex items-center gap-4 sm:gap-6">
-          <a
-            href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
-            className="flex items-center gap-1.5 hover:text-white transition-colors"
-          >
-            <PhoneIcon className="w-3.5 h-3.5 text-[#c49835]" />
-            {contactInfo.phone}
-          </a>
           <a
             href={`mailto:${contactInfo.email}`}
             className="flex items-center gap-1.5 hover:text-white transition-colors"

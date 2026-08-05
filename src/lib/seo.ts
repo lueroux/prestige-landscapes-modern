@@ -19,7 +19,6 @@ export function generateOrganizationSchema(content: SiteContent) {
       addressRegion: "Staffordshire",
       addressCountry: "GB",
     },
-    telephone: content.contactInfo.phone,
     email: content.contactInfo.email,
     priceRange: "££",
     areaServed: [
@@ -78,7 +77,6 @@ export function generateLocalBusinessSchema(content: SiteContent) {
     "@type": "LocalBusiness",
     name: siteName,
     url: baseUrl,
-    telephone: content.contactInfo.phone,
     email: content.contactInfo.email,
     address: {
       "@type": "PostalAddress",

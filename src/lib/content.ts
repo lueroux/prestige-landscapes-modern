@@ -10,7 +10,7 @@ export const siteContent: SiteContent = {
       "We provide professional resin driveway installations across Cannock and surrounding Staffordshire areas using premium quality materials and expert workmanship.",
     ],
     ctaText: "Get A Free Quote",
-    ctaHref: "tel:07530297072",
+    ctaHref: "#quote",
     imageSrc: "/images/hero-specs.png",
     imageAlt: "resin driveway installation specs",
   },
@@ -115,7 +115,7 @@ export const siteContent: SiteContent = {
     },
   ],
   contactInfo: {
-    phone: "07530 297072",
+    phone: "",
     email: "info@prestigelandscapes.co.uk",
   },
 };

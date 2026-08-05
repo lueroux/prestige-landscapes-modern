@@ -58,10 +58,10 @@ export function UvStableSection() {
             </div>
 
             <Link
-              href="tel:07530297072"
+              href="#quote"
               className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-[#c49835] text-white font-semibold rounded-full hover:bg-[#9e7929] transition-all duration-300 shadow-[0_4px_20px_rgba(196,152,53,0.3)] hover:shadow-[0_6px_24px_rgba(196,152,53,0.4)] group"
             >
-              Call For A Free Quote
+              Get A Free Quote
               <ArrowRightIcon className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </ScrollReveal>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PhoneIcon, MailIcon, MapPinIcon } from "lucide-react";
+import { MailIcon, MapPinIcon } from "lucide-react";
 import { siteContent } from "@/lib/content";
 
 const footerLinks = {
@@ -41,13 +41,6 @@ export function Footer() {
               and throughout Staffordshire.
             </p>
             <div className="space-y-3">
-              <a
-                href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-[#c49835] transition-colors"
-              >
-                <PhoneIcon className="w-4 h-4 text-[#c49835]" />
-                {contactInfo.phone}
-              </a>
               <a
                 href={`mailto:${contactInfo.email}`}
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-[#c49835] transition-colors"

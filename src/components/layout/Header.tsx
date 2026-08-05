@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { MenuIcon, XIcon, PhoneIcon } from "lucide-react";
+import { MenuIcon, XIcon } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -62,7 +62,6 @@ export function Header() {
               href="#quote"
               className="ml-3 inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold text-white bg-[#c49835] rounded-full hover:bg-[#9e7929] transition-all duration-300 shadow-[0_2px_8px_rgba(196,152,53,0.3)] hover:shadow-[0_4px_12px_rgba(196,152,53,0.4)] hover:scale-[1.03] active:scale-[0.97]"
             >
-              <PhoneIcon className="w-3.5 h-3.5" />
               Free Quote
             </Link>
           </nav>
@@ -149,7 +148,6 @@ export function Header() {
                     onClick={() => setMobileOpen(false)}
                     className="flex items-center justify-center gap-2 w-full py-3 text-[14px] font-semibold text-white bg-[#c49835] rounded-full hover:bg-[#9e7929] transition-all duration-300"
                   >
-                    <PhoneIcon className="w-4 h-4" />
                     Get Free Quote
                   </Link>
                 </motion.li>
