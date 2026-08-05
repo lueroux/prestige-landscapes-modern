@@ -44,8 +44,11 @@ export function Header() {
               className="h-9 w-auto"
               priority
             />
-            <span className="text-lg font-bold tracking-tight text-[#1a1a1a]">
-              Prestige<span className="font-medium text-gray-500"> Landscapes</span>
+            <span className="text-lg font-bold tracking-tight text-[#1a1a1a] leading-tight">
+              Prestige Landscapes
+              <span className="block text-[13px] font-medium text-gray-400 leading-tight">
+                &amp; Resin Bound Surfaces
+              </span>
             </span>
           </Link>
 
