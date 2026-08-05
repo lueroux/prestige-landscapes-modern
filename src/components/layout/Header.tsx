@@ -34,16 +34,19 @@ export function Header() {
         className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-[0_1px_3px_rgba(0,0,0,0.06)]"
       >
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 h-[72px]">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0 flex items-center">
+          {/* Logo — icon + sleek text */}
+          <Link href="/" className="flex-shrink-0 flex items-center gap-2.5 group">
             <Image
-              src="/images/logo.png"
+              src="/images/icon.png"
               alt="Prestige Landscapes"
-              width={120}
-              height={54}
-              className="h-[54px] w-auto"
+              width={40}
+              height={40}
+              className="h-9 w-auto"
               priority
             />
+            <span className="text-lg font-bold tracking-tight text-[#1a1a1a]">
+              Prestige<span className="font-medium text-gray-500"> Landscapes</span>
+            </span>
           </Link>
 
           {/* Desktop Nav */}
